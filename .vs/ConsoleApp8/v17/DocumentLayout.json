@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\I Novbe\\Desktop\\LibraryTask\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{76B83C52-42A1-45E6-9F80-69A85E819782}|ConsoleApp8\\ConsoleApp8.csproj|c:\\users\\i novbe\\desktop\\librarytask\\consoleapp8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B83C52-42A1-45E6-9F80-69A85E819782}|ConsoleApp8\\ConsoleApp8.csproj|solutionrelative:consoleapp8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B83C52-42A1-45E6-9F80-69A85E819782}|ConsoleApp8\\ConsoleApp8.csproj|c:\\users\\i novbe\\desktop\\librarytask\\consoleapp8\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B83C52-42A1-45E6-9F80-69A85E819782}|ConsoleApp8\\ConsoleApp8.csproj|solutionrelative:consoleapp8\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B83C52-42A1-45E6-9F80-69A85E819782}|ConsoleApp8\\ConsoleApp8.csproj|c:\\users\\i novbe\\desktop\\librarytask\\consoleapp8\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B83C52-42A1-45E6-9F80-69A85E819782}|ConsoleApp8\\ConsoleApp8.csproj|solutionrelative:consoleapp8\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\I Novbe\\Desktop\\LibraryTask\\ConsoleApp8\\Book.cs",
+              "RelativeDocumentMoniker": "ConsoleApp8\\Book.cs",
+              "ToolTip": "C:\\Users\\I Novbe\\Desktop\\LibraryTask\\ConsoleApp8\\Book.cs",
+              "RelativeToolTip": "ConsoleApp8\\Book.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T08:15:00.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\I Novbe\\Desktop\\LibraryTask\\ConsoleApp8\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp8\\Program.cs",
+              "ToolTip": "C:\\Users\\I Novbe\\Desktop\\LibraryTask\\ConsoleApp8\\Program.cs",
+              "RelativeToolTip": "ConsoleApp8\\Program.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAgwBsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T08:14:58.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Library.cs",
+              "DocumentMoniker": "C:\\Users\\I Novbe\\Desktop\\LibraryTask\\ConsoleApp8\\Library.cs",
+              "RelativeDocumentMoniker": "ConsoleApp8\\Library.cs",
+              "ToolTip": "C:\\Users\\I Novbe\\Desktop\\LibraryTask\\ConsoleApp8\\Library.cs",
+              "RelativeToolTip": "ConsoleApp8\\Library.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T08:14:58.064Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

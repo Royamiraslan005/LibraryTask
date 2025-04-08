@@ -7,51 +7,134 @@ namespace ConsoleApp8
         static void Main(string[] args)
         {
 
-           Library library=new Library();
+            Library library = new Library("ABD");
+            Book book = new Book("Amok koşucusu", "Stefan zweig", 20);
+
             while (true)
             {
-                Console.WriteLine("\n -------MENYU------ ");
-                Console.WriteLine("1. Add book");
-                Console.WriteLine("2. Get book by id");
-                Console.WriteLine("3. Remove book");
-                Console.WriteLine("4. Update Book");
-                Console.WriteLine("5. Get all books");
-                Console.WriteLine("0. Quit");
+                Console.WriteLine("1. Add book\r\n2. Get book by id\r\n3. Remove book\r\n4. Update Book\r\n5. Get all books\r\n0. Quit ");
+                int secim;
+                bool ischeck = int.TryParse(Console.ReadLine(), out secim);
 
-                string secim = Console.ReadLine();
-                switch (secim)
+                if (ischeck)
                 {
-                    case "1":
-                        Console.Write("kitabin adini daxil edin");
-                        string name= Console.ReadLine();
-                        Console.Write("kitabin muellifini daxil edin");
-                        string author= Console.ReadLine();
-                        Console.Write("kitabin qiymetini daxil edin");
-                        double price=double.Parse(Console.ReadLine());
-                        Book book=new Book(name,author,price);
-                        library.AddBook(book);
-                        break;
-                        case "2":
-                        Console.WriteLine("kitabin id sini daxil edin");
-                        int id=int.Parse(Console.ReadLine());
-                        break;
-                        case "3":
-                        Console.WriteLine("kitabin ID sini sil");
-                        break;
-                    case "4":
-                        Console.WriteLine("kitabi deyis");
-                        break;
-                        case "5":
-                        Console.WriteLine("kitablarin hamisini daxil edin");
-                        break;
-                        case "0":
-                        Console.WriteLine("QUIT");
-                        break;
-                       default:
-                        Console.WriteLine("yeniden cehd ediniz");
-                        break;
+                    switch (secim)
+                    {
+                        case 0:
+                            return;
+
+                        case 1:
+
+                            Console.WriteLine("Name:");
+                            string name = Console.ReadLine();
+                            Console.WriteLine("Author Name:");
+                            string Authorname = Console.ReadLine();
+
+
+                            while (true)
+                            {
+                                Console.WriteLine("price");
+                                bool check = int.TryParse(Console.ReadLine(), out int price);
+
+                                if (check)
+                                {
+                                    Book book1 = new Book(name, Authorname, price);
+                                    library.AddBook(book1);
+
+                                    break;
+
+                                }
+
+
+
+                            }
+
+                            break;
+
+
+
+                        case 2:
+                            int id;
+                            while (true)
+                            {
+                                Console.WriteLine("ID");
+                                bool check = int.TryParse(Console.ReadLine(), out id);
+                                if (check)
+                                {
+                                    Console.WriteLine(library.GetBookById(id));
+                                    break;
+                                }
+                            }
+                            break;
+
+                        case 3:
+                            int id3;
+
+                            while (true)
+                            {
+                                Console.WriteLine("ID:");
+                                bool check = int.TryParse(Console.ReadLine(), out id3);
+                                if (check)
+                                {
+                                    break;
+                                }
+
+
+                            }
+                            library.RemoveBook(id3);
+                            break;
+
+
+
+
+                        case 4:
+                            int id4;
+                            while (true)
+                            {
+                                bool check = int.TryParse(Console.ReadLine(), out id4);
+                                if (check)
+                                {
+                                    break;
+                                }
+
+
+
+
+                            }
+                            Console.WriteLine("Name:");
+                            string name2 = Console.ReadLine();
+                            Console.WriteLine("Author Name:");
+                            string Authorname2 = Console.ReadLine();
+
+
+                            while (true)
+                            {
+                                Console.WriteLine("price");
+                                bool check = int.TryParse(Console.ReadLine(), out int price);
+                                if (check)
+                                {
+                                    Book book1 = new Book(name2, Authorname2, price);
+                                    library.Update(id4, book1);
+
+                                    break;
+
+                                }
+
+
+
+                            }
+                            break;
+                        case 5:
+                            library.GetAllBooks();
+                            break;
+
+                        default:
+                            break;
+                    }
                 }
+
             }
         }
+
     }
 }

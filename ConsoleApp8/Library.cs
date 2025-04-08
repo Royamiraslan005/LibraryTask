@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace ConsoleApp8
 {
@@ -19,22 +20,11 @@ namespace ConsoleApp8
         }
         public void AddBook(Book book)
         {
-            Array.Resize(ref books, books.Length);
-            books[books.Length] = book;
+            Array.Resize(ref books, books.Length+1);
+            books[books.Length-1] = book;
             currentBooks++;
         }
-        public void GetBookById(int _ID)
-        {
-            for (int i = 0; i < books.Length; i++)
-            {
-                if (_ID == books[i].Id)
-                {
-                    books[i].Id = _ID;
-                    Console.WriteLine("Id li kitab DAXIL EDIN;");
-
-                }
-            }
-        }
+      
         public void RemoveBook(int _ID)
         {
             Book[] arr = new Book[books.Length - 1];
@@ -42,9 +32,11 @@ namespace ConsoleApp8
             {
                 if (books[i].Id == _ID)
                 {
-                    continue;
                     arr[i] = books[i];
+                    continue;
+                   
                 }
+                
                 books = arr;
             }
         }
@@ -70,6 +62,27 @@ namespace ConsoleApp8
                 }
             }
             return null;
+        }
+        public void GetAllBooks()
+        {
+            for (int i = 0; i < books.Length; i++)
+            {
+                Console.WriteLine(books[i]);
+            }
+        }
+        public Book GetBookById(int id)
+        {
+            foreach (var item in books)
+            {
+                if (item.Id == id)
+                {
+                    return item;
+                }
+
+
+            }
+            return null;
+
         }
     }
 }
